@@ -58,5 +58,10 @@ namespace KBYSİ
             dash.Show();
             this.Hide();
         }
+
+        private void VPatient_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

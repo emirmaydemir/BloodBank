@@ -43,29 +43,32 @@ namespace KBYSİ
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.pnl_name2 = new System.Windows.Forms.Panel();
-            this.txt_name2 = new System.Windows.Forms.TextBox();
+            this.txt_name = new System.Windows.Forms.TextBox();
             this.pnl_age2 = new System.Windows.Forms.Panel();
-            this.txt_age2 = new System.Windows.Forms.TextBox();
+            this.txt_age = new System.Windows.Forms.TextBox();
             this.pnl_phone2 = new System.Windows.Forms.Panel();
-            this.txt_phone2 = new System.Windows.Forms.TextBox();
+            this.txt_phone = new System.Windows.Forms.TextBox();
             this.lbl_name2 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.lbl_gender2 = new System.Windows.Forms.Label();
-            this.cmb_gender2 = new System.Windows.Forms.ComboBox();
+            this.cmb_gender = new System.Windows.Forms.ComboBox();
             this.lbl_blood2 = new System.Windows.Forms.Label();
-            this.cmb_blood2 = new System.Windows.Forms.ComboBox();
-            this.txt_address2 = new System.Windows.Forms.TextBox();
+            this.cmb_blood = new System.Windows.Forms.ComboBox();
+            this.txt_address = new System.Windows.Forms.TextBox();
             this.lbl_address2 = new System.Windows.Forms.Label();
-            this.btn_save2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.btn_delete = new System.Windows.Forms.Button();
+            this.grd_patients = new System.Windows.Forms.DataGridView();
             this.lbl_Vtc = new System.Windows.Forms.Label();
             this.pnl_Vtc = new System.Windows.Forms.Panel();
-            this.txt_Vtc = new System.Windows.Forms.TextBox();
+            this.txt_tc = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.txt_surname = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_patients)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -215,7 +218,7 @@ namespace KBYSİ
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(649, 74);
+            this.label10.Location = new System.Drawing.Point(650, 75);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(140, 32);
             this.label10.TabIndex = 23;
@@ -224,56 +227,56 @@ namespace KBYSİ
             // pnl_name2
             // 
             this.pnl_name2.BackColor = System.Drawing.Color.Red;
-            this.pnl_name2.Location = new System.Drawing.Point(240, 186);
+            this.pnl_name2.Location = new System.Drawing.Point(620, 173);
             this.pnl_name2.Name = "pnl_name2";
             this.pnl_name2.Size = new System.Drawing.Size(200, 2);
             this.pnl_name2.TabIndex = 25;
             // 
-            // txt_name2
+            // txt_name
             // 
-            this.txt_name2.BackColor = System.Drawing.Color.White;
-            this.txt_name2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_name2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_name2.Location = new System.Drawing.Point(240, 161);
-            this.txt_name2.Name = "txt_name2";
-            this.txt_name2.Size = new System.Drawing.Size(200, 22);
-            this.txt_name2.TabIndex = 24;
+            this.txt_name.BackColor = System.Drawing.Color.White;
+            this.txt_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_name.Location = new System.Drawing.Point(620, 148);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(200, 22);
+            this.txt_name.TabIndex = 24;
             // 
             // pnl_age2
             // 
             this.pnl_age2.BackColor = System.Drawing.Color.Red;
-            this.pnl_age2.Location = new System.Drawing.Point(500, 186);
+            this.pnl_age2.Location = new System.Drawing.Point(620, 249);
             this.pnl_age2.Name = "pnl_age2";
             this.pnl_age2.Size = new System.Drawing.Size(200, 2);
             this.pnl_age2.TabIndex = 27;
             // 
-            // txt_age2
+            // txt_age
             // 
-            this.txt_age2.BackColor = System.Drawing.Color.White;
-            this.txt_age2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_age2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_age2.Location = new System.Drawing.Point(500, 161);
-            this.txt_age2.Name = "txt_age2";
-            this.txt_age2.Size = new System.Drawing.Size(200, 22);
-            this.txt_age2.TabIndex = 26;
+            this.txt_age.BackColor = System.Drawing.Color.White;
+            this.txt_age.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_age.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_age.Location = new System.Drawing.Point(620, 224);
+            this.txt_age.Name = "txt_age";
+            this.txt_age.Size = new System.Drawing.Size(200, 22);
+            this.txt_age.TabIndex = 26;
             // 
             // pnl_phone2
             // 
             this.pnl_phone2.BackColor = System.Drawing.Color.Red;
-            this.pnl_phone2.Location = new System.Drawing.Point(760, 186);
+            this.pnl_phone2.Location = new System.Drawing.Point(620, 340);
             this.pnl_phone2.Name = "pnl_phone2";
             this.pnl_phone2.Size = new System.Drawing.Size(200, 2);
             this.pnl_phone2.TabIndex = 29;
             // 
-            // txt_phone2
+            // txt_phone
             // 
-            this.txt_phone2.BackColor = System.Drawing.Color.White;
-            this.txt_phone2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_phone2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_phone2.Location = new System.Drawing.Point(760, 161);
-            this.txt_phone2.Name = "txt_phone2";
-            this.txt_phone2.Size = new System.Drawing.Size(200, 22);
-            this.txt_phone2.TabIndex = 28;
+            this.txt_phone.BackColor = System.Drawing.Color.White;
+            this.txt_phone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_phone.Location = new System.Drawing.Point(620, 315);
+            this.txt_phone.Name = "txt_phone";
+            this.txt_phone.Size = new System.Drawing.Size(200, 22);
+            this.txt_phone.TabIndex = 28;
             // 
             // lbl_name2
             // 
@@ -281,11 +284,11 @@ namespace KBYSİ
             this.lbl_name2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.lbl_name2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_name2.ForeColor = System.Drawing.Color.Red;
-            this.lbl_name2.Location = new System.Drawing.Point(236, 133);
+            this.lbl_name2.Location = new System.Drawing.Point(616, 120);
             this.lbl_name2.Name = "lbl_name2";
-            this.lbl_name2.Size = new System.Drawing.Size(43, 24);
+            this.lbl_name2.Size = new System.Drawing.Size(34, 24);
             this.lbl_name2.TabIndex = 30;
-            this.lbl_name2.Text = "İsim";
+            this.lbl_name2.Text = "Ad";
             // 
             // label11
             // 
@@ -293,7 +296,7 @@ namespace KBYSİ
             this.label11.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(496, 133);
+            this.label11.Location = new System.Drawing.Point(616, 196);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(41, 24);
             this.label11.TabIndex = 31;
@@ -305,7 +308,7 @@ namespace KBYSİ
             this.label12.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(756, 133);
+            this.label12.Location = new System.Drawing.Point(616, 287);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(74, 24);
             this.label12.TabIndex = 32;
@@ -317,23 +320,23 @@ namespace KBYSİ
             this.lbl_gender2.BackColor = System.Drawing.Color.White;
             this.lbl_gender2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_gender2.ForeColor = System.Drawing.Color.Red;
-            this.lbl_gender2.Location = new System.Drawing.Point(308, 209);
+            this.lbl_gender2.Location = new System.Drawing.Point(931, 196);
             this.lbl_gender2.Name = "lbl_gender2";
             this.lbl_gender2.Size = new System.Drawing.Size(78, 19);
             this.lbl_gender2.TabIndex = 33;
             this.lbl_gender2.Text = "Cinsiyet";
             // 
-            // cmb_gender2
+            // cmb_gender
             // 
-            this.cmb_gender2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.cmb_gender2.FormattingEnabled = true;
-            this.cmb_gender2.Items.AddRange(new object[] {
+            this.cmb_gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.cmb_gender.FormattingEnabled = true;
+            this.cmb_gender.Items.AddRange(new object[] {
             "Erkek",
             "Kadın"});
-            this.cmb_gender2.Location = new System.Drawing.Point(312, 240);
-            this.cmb_gender2.Name = "cmb_gender2";
-            this.cmb_gender2.Size = new System.Drawing.Size(220, 32);
-            this.cmb_gender2.TabIndex = 34;
+            this.cmb_gender.Location = new System.Drawing.Point(935, 227);
+            this.cmb_gender.Name = "cmb_gender";
+            this.cmb_gender.Size = new System.Drawing.Size(220, 32);
+            this.cmb_gender.TabIndex = 34;
             // 
             // lbl_blood2
             // 
@@ -341,17 +344,17 @@ namespace KBYSİ
             this.lbl_blood2.BackColor = System.Drawing.Color.White;
             this.lbl_blood2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_blood2.ForeColor = System.Drawing.Color.Red;
-            this.lbl_blood2.Location = new System.Drawing.Point(606, 206);
+            this.lbl_blood2.Location = new System.Drawing.Point(301, 196);
             this.lbl_blood2.Name = "lbl_blood2";
             this.lbl_blood2.Size = new System.Drawing.Size(101, 19);
             this.lbl_blood2.TabIndex = 35;
             this.lbl_blood2.Text = "Kan Grubu";
             // 
-            // cmb_blood2
+            // cmb_blood
             // 
-            this.cmb_blood2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.cmb_blood2.FormattingEnabled = true;
-            this.cmb_blood2.Items.AddRange(new object[] {
+            this.cmb_blood.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.cmb_blood.FormattingEnabled = true;
+            this.cmb_blood.Items.AddRange(new object[] {
             "A+",
             "0+",
             "B+",
@@ -360,18 +363,18 @@ namespace KBYSİ
             "0-",
             "B-",
             "AB-"});
-            this.cmb_blood2.Location = new System.Drawing.Point(610, 240);
-            this.cmb_blood2.Name = "cmb_blood2";
-            this.cmb_blood2.Size = new System.Drawing.Size(220, 32);
-            this.cmb_blood2.TabIndex = 36;
+            this.cmb_blood.Location = new System.Drawing.Point(305, 230);
+            this.cmb_blood.Name = "cmb_blood";
+            this.cmb_blood.Size = new System.Drawing.Size(220, 32);
+            this.cmb_blood.TabIndex = 36;
             // 
-            // txt_address2
+            // txt_address
             // 
-            this.txt_address2.Location = new System.Drawing.Point(903, 240);
-            this.txt_address2.Multiline = true;
-            this.txt_address2.Name = "txt_address2";
-            this.txt_address2.Size = new System.Drawing.Size(220, 32);
-            this.txt_address2.TabIndex = 38;
+            this.txt_address.Location = new System.Drawing.Point(305, 321);
+            this.txt_address.Multiline = true;
+            this.txt_address.Name = "txt_address";
+            this.txt_address.Size = new System.Drawing.Size(220, 32);
+            this.txt_address.TabIndex = 38;
             // 
             // lbl_address2
             // 
@@ -379,43 +382,43 @@ namespace KBYSİ
             this.lbl_address2.BackColor = System.Drawing.Color.White;
             this.lbl_address2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_address2.ForeColor = System.Drawing.Color.Red;
-            this.lbl_address2.Location = new System.Drawing.Point(899, 206);
+            this.lbl_address2.Location = new System.Drawing.Point(301, 287);
             this.lbl_address2.Name = "lbl_address2";
             this.lbl_address2.Size = new System.Drawing.Size(57, 19);
             this.lbl_address2.TabIndex = 37;
             this.lbl_address2.Text = "Adres";
             // 
-            // btn_save2
+            // btn_save
             // 
-            this.btn_save2.BackColor = System.Drawing.Color.ForestGreen;
-            this.btn_save2.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_save2.ForeColor = System.Drawing.Color.White;
-            this.btn_save2.Location = new System.Drawing.Point(497, 292);
-            this.btn_save2.Name = "btn_save2";
-            this.btn_save2.Size = new System.Drawing.Size(170, 38);
-            this.btn_save2.TabIndex = 39;
-            this.btn_save2.Text = "Kaydet";
-            this.btn_save2.UseVisualStyleBackColor = false;
+            this.btn_save.BackColor = System.Drawing.Color.ForestGreen;
+            this.btn_save.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_save.ForeColor = System.Drawing.Color.White;
+            this.btn_save.Location = new System.Drawing.Point(935, 320);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(170, 38);
+            this.btn_save.TabIndex = 39;
+            this.btn_save.Text = "Kaydet";
+            this.btn_save.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btn_delete
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(759, 292);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 38);
-            this.button1.TabIndex = 40;
-            this.button1.Text = "Sil";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_delete.BackColor = System.Drawing.Color.Red;
+            this.btn_delete.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_delete.ForeColor = System.Drawing.Color.White;
+            this.btn_delete.Location = new System.Drawing.Point(935, 276);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(170, 38);
+            this.btn_delete.TabIndex = 40;
+            this.btn_delete.Text = "Sil";
+            this.btn_delete.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // grd_patients
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(222, 351);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1014, 279);
-            this.dataGridView1.TabIndex = 41;
+            this.grd_patients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grd_patients.Location = new System.Drawing.Point(305, 385);
+            this.grd_patients.Name = "grd_patients";
+            this.grd_patients.Size = new System.Drawing.Size(850, 219);
+            this.grd_patients.TabIndex = 41;
             // 
             // lbl_Vtc
             // 
@@ -423,7 +426,7 @@ namespace KBYSİ
             this.lbl_Vtc.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.lbl_Vtc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_Vtc.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Vtc.Location = new System.Drawing.Point(1016, 133);
+            this.lbl_Vtc.Location = new System.Drawing.Point(301, 120);
             this.lbl_Vtc.Name = "lbl_Vtc";
             this.lbl_Vtc.Size = new System.Drawing.Size(35, 24);
             this.lbl_Vtc.TabIndex = 44;
@@ -432,20 +435,50 @@ namespace KBYSİ
             // pnl_Vtc
             // 
             this.pnl_Vtc.BackColor = System.Drawing.Color.Red;
-            this.pnl_Vtc.Location = new System.Drawing.Point(1020, 186);
+            this.pnl_Vtc.Location = new System.Drawing.Point(305, 173);
             this.pnl_Vtc.Name = "pnl_Vtc";
             this.pnl_Vtc.Size = new System.Drawing.Size(200, 2);
             this.pnl_Vtc.TabIndex = 43;
             // 
-            // txt_Vtc
+            // txt_tc
             // 
-            this.txt_Vtc.BackColor = System.Drawing.Color.White;
-            this.txt_Vtc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_Vtc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_Vtc.Location = new System.Drawing.Point(1020, 161);
-            this.txt_Vtc.Name = "txt_Vtc";
-            this.txt_Vtc.Size = new System.Drawing.Size(200, 22);
-            this.txt_Vtc.TabIndex = 42;
+            this.txt_tc.BackColor = System.Drawing.Color.White;
+            this.txt_tc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_tc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_tc.Location = new System.Drawing.Point(305, 148);
+            this.txt_tc.Name = "txt_tc";
+            this.txt_tc.Size = new System.Drawing.Size(200, 22);
+            this.txt_tc.TabIndex = 42;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.ForeColor = System.Drawing.Color.Red;
+            this.label13.Location = new System.Drawing.Point(931, 120);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(63, 24);
+            this.label13.TabIndex = 47;
+            this.label13.Text = "Soyad";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Red;
+            this.panel4.Location = new System.Drawing.Point(935, 173);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 2);
+            this.panel4.TabIndex = 46;
+            // 
+            // txt_surname
+            // 
+            this.txt_surname.BackColor = System.Drawing.Color.White;
+            this.txt_surname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_surname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_surname.Location = new System.Drawing.Point(935, 148);
+            this.txt_surname.Name = "txt_surname";
+            this.txt_surname.Size = new System.Drawing.Size(200, 22);
+            this.txt_surname.TabIndex = 45;
             // 
             // VPatient
             // 
@@ -453,27 +486,30 @@ namespace KBYSİ
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1268, 630);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.txt_surname);
             this.Controls.Add(this.lbl_Vtc);
             this.Controls.Add(this.pnl_Vtc);
-            this.Controls.Add(this.txt_Vtc);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btn_save2);
-            this.Controls.Add(this.txt_address2);
+            this.Controls.Add(this.txt_tc);
+            this.Controls.Add(this.grd_patients);
+            this.Controls.Add(this.btn_delete);
+            this.Controls.Add(this.btn_save);
+            this.Controls.Add(this.txt_address);
             this.Controls.Add(this.lbl_address2);
             this.Controls.Add(this.lbl_blood2);
-            this.Controls.Add(this.cmb_blood2);
+            this.Controls.Add(this.cmb_blood);
             this.Controls.Add(this.lbl_gender2);
-            this.Controls.Add(this.cmb_gender2);
+            this.Controls.Add(this.cmb_gender);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.lbl_name2);
             this.Controls.Add(this.pnl_phone2);
-            this.Controls.Add(this.txt_phone2);
+            this.Controls.Add(this.txt_phone);
             this.Controls.Add(this.pnl_age2);
-            this.Controls.Add(this.txt_age2);
+            this.Controls.Add(this.txt_age);
             this.Controls.Add(this.pnl_name2);
-            this.Controls.Add(this.txt_name2);
+            this.Controls.Add(this.txt_name);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -481,11 +517,12 @@ namespace KBYSİ
             this.Name = "VPatient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VPatient";
+            this.Load += new System.EventHandler(this.VPatient_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_patients)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -507,25 +544,28 @@ namespace KBYSİ
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel pnl_name2;
-        private System.Windows.Forms.TextBox txt_name2;
+        private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.Panel pnl_age2;
-        private System.Windows.Forms.TextBox txt_age2;
+        private System.Windows.Forms.TextBox txt_age;
         private System.Windows.Forms.Panel pnl_phone2;
-        private System.Windows.Forms.TextBox txt_phone2;
+        private System.Windows.Forms.TextBox txt_phone;
         private System.Windows.Forms.Label lbl_name2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label lbl_gender2;
-        private System.Windows.Forms.ComboBox cmb_gender2;
+        private System.Windows.Forms.ComboBox cmb_gender;
         private System.Windows.Forms.Label lbl_blood2;
-        private System.Windows.Forms.ComboBox cmb_blood2;
-        private System.Windows.Forms.TextBox txt_address2;
+        private System.Windows.Forms.ComboBox cmb_blood;
+        private System.Windows.Forms.TextBox txt_address;
         private System.Windows.Forms.Label lbl_address2;
-        private System.Windows.Forms.Button btn_save2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.DataGridView grd_patients;
         private System.Windows.Forms.Label lbl_Vtc;
         private System.Windows.Forms.Panel pnl_Vtc;
-        private System.Windows.Forms.TextBox txt_Vtc;
+        private System.Windows.Forms.TextBox txt_tc;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox txt_surname;
     }
 }

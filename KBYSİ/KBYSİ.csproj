@@ -55,12 +55,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BloodBankDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BloodBankDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BloodTransfer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BloodTransfer.Designer.cs">
       <DependentUpon>BloodTransfer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Connection.cs" />
     <Compile Include="DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,17 @@
     <EmbeddedResource Include="VPatient.resx">
       <DependentUpon>VPatient.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="BloodBankDataSet.xsc">
+      <DependentUpon>BloodBankDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BloodBankDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BloodBankDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BloodBankDataSet.xss">
+      <DependentUpon>BloodBankDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

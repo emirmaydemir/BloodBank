@@ -17,7 +17,6 @@ namespace KBYSİ
             InitializeComponent();
         }
 
-
         private void label2_Click(object sender, EventArgs e)
         {
             Donor don = new Donor();
