@@ -16,6 +16,7 @@ namespace KBYSİ
         {
             InitializeComponent();
             // commit denemesi icin yazildi :)
+            // commit denemesi 2 :)
         }
 
     
