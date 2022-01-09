@@ -15,6 +15,7 @@ namespace KBYSİ
         public Login()
         {
             InitializeComponent();
+            // commit denemesi icin yazildi :)
         }
 
     
