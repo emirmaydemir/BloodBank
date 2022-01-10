@@ -43,31 +43,34 @@ namespace KBYSİ
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnl_patient2 = new System.Windows.Forms.Panel();
-            this.lbl_tc2 = new System.Windows.Forms.Label();
-            this.pnl_tc2 = new System.Windows.Forms.Panel();
-            this.txt_tc2 = new System.Windows.Forms.TextBox();
-            this.btn_save2 = new System.Windows.Forms.Button();
-            this.txt_address2 = new System.Windows.Forms.TextBox();
-            this.lbl_address2 = new System.Windows.Forms.Label();
-            this.lbl_blood2 = new System.Windows.Forms.Label();
-            this.cmb_blood2 = new System.Windows.Forms.ComboBox();
-            this.lbl_phone2 = new System.Windows.Forms.Label();
-            this.pnl_phone2 = new System.Windows.Forms.Panel();
-            this.txt_phone2 = new System.Windows.Forms.TextBox();
-            this.lbl_age2 = new System.Windows.Forms.Label();
-            this.pnl_age2 = new System.Windows.Forms.Panel();
-            this.txt_age2 = new System.Windows.Forms.TextBox();
-            this.lbl_gender2 = new System.Windows.Forms.Label();
-            this.cmb_gender2 = new System.Windows.Forms.ComboBox();
-            this.lbl_name2 = new System.Windows.Forms.Label();
-            this.pnl_name2 = new System.Windows.Forms.Panel();
-            this.txt_name2 = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.txt_surname = new System.Windows.Forms.TextBox();
+            this.lbl_tc = new System.Windows.Forms.Label();
+            this.pnl_tc = new System.Windows.Forms.Panel();
+            this.txt_tc = new System.Windows.Forms.TextBox();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.txt_address = new System.Windows.Forms.TextBox();
+            this.lbl_address = new System.Windows.Forms.Label();
+            this.lbl_blood = new System.Windows.Forms.Label();
+            this.cmb_blood = new System.Windows.Forms.ComboBox();
+            this.lbl_phone = new System.Windows.Forms.Label();
+            this.pnl_phone = new System.Windows.Forms.Panel();
+            this.txt_phone = new System.Windows.Forms.TextBox();
+            this.lbl_age = new System.Windows.Forms.Label();
+            this.pnl_age = new System.Windows.Forms.Panel();
+            this.txt_age = new System.Windows.Forms.TextBox();
+            this.lbl_gender = new System.Windows.Forms.Label();
+            this.cmb_gender = new System.Windows.Forms.ComboBox();
+            this.lbl_name = new System.Windows.Forms.Label();
+            this.pnl_name = new System.Windows.Forms.Panel();
+            this.txt_name = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnl_patient2.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -218,245 +221,268 @@ namespace KBYSİ
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(55, 59);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
-            // pnl_patient2
+            // panel4
             // 
-            this.pnl_patient2.Controls.Add(this.lbl_tc2);
-            this.pnl_patient2.Controls.Add(this.pnl_tc2);
-            this.pnl_patient2.Controls.Add(this.txt_tc2);
-            this.pnl_patient2.Controls.Add(this.btn_save2);
-            this.pnl_patient2.Controls.Add(this.txt_address2);
-            this.pnl_patient2.Controls.Add(this.lbl_address2);
-            this.pnl_patient2.Controls.Add(this.lbl_blood2);
-            this.pnl_patient2.Controls.Add(this.cmb_blood2);
-            this.pnl_patient2.Controls.Add(this.lbl_phone2);
-            this.pnl_patient2.Controls.Add(this.pnl_phone2);
-            this.pnl_patient2.Controls.Add(this.txt_phone2);
-            this.pnl_patient2.Controls.Add(this.lbl_age2);
-            this.pnl_patient2.Controls.Add(this.pnl_age2);
-            this.pnl_patient2.Controls.Add(this.txt_age2);
-            this.pnl_patient2.Controls.Add(this.lbl_gender2);
-            this.pnl_patient2.Controls.Add(this.cmb_gender2);
-            this.pnl_patient2.Controls.Add(this.lbl_name2);
-            this.pnl_patient2.Controls.Add(this.pnl_name2);
-            this.pnl_patient2.Controls.Add(this.txt_name2);
-            this.pnl_patient2.ForeColor = System.Drawing.Color.Black;
-            this.pnl_patient2.Location = new System.Drawing.Point(213, 191);
-            this.pnl_patient2.Name = "pnl_patient2";
-            this.pnl_patient2.Size = new System.Drawing.Size(1026, 427);
-            this.pnl_patient2.TabIndex = 20;
+            this.panel4.Controls.Add(this.label11);
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.txt_surname);
+            this.panel4.Controls.Add(this.lbl_tc);
+            this.panel4.Controls.Add(this.pnl_tc);
+            this.panel4.Controls.Add(this.txt_tc);
+            this.panel4.Controls.Add(this.btn_save);
+            this.panel4.Controls.Add(this.txt_address);
+            this.panel4.Controls.Add(this.lbl_address);
+            this.panel4.Controls.Add(this.lbl_blood);
+            this.panel4.Controls.Add(this.cmb_blood);
+            this.panel4.Controls.Add(this.lbl_phone);
+            this.panel4.Controls.Add(this.pnl_phone);
+            this.panel4.Controls.Add(this.txt_phone);
+            this.panel4.Controls.Add(this.lbl_age);
+            this.panel4.Controls.Add(this.pnl_age);
+            this.panel4.Controls.Add(this.txt_age);
+            this.panel4.Controls.Add(this.lbl_gender);
+            this.panel4.Controls.Add(this.cmb_gender);
+            this.panel4.Controls.Add(this.lbl_name);
+            this.panel4.Controls.Add(this.pnl_name);
+            this.panel4.Controls.Add(this.txt_name);
+            this.panel4.ForeColor = System.Drawing.Color.Black;
+            this.panel4.Location = new System.Drawing.Point(213, 191);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1026, 427);
+            this.panel4.TabIndex = 21;
             // 
-            // lbl_tc2
+            // label11
             // 
-            this.lbl_tc2.AutoSize = true;
-            this.lbl_tc2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lbl_tc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_tc2.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_tc2.Location = new System.Drawing.Point(45, 286);
-            this.lbl_tc2.Name = "lbl_tc2";
-            this.lbl_tc2.Size = new System.Drawing.Size(29, 20);
-            this.lbl_tc2.TabIndex = 24;
-            this.lbl_tc2.Text = "TC";
-            this.lbl_tc2.Click += new System.EventHandler(this.LabelEffect_Click);
+            this.label11.AutoSize = true;
+            this.label11.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.ForeColor = System.Drawing.Color.Silver;
+            this.label11.Location = new System.Drawing.Point(691, 59);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(54, 20);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Soyad";
+            this.label11.Click += new System.EventHandler(this.LabelEffect_Click);
             // 
-            // pnl_tc2
+            // panel5
             // 
-            this.pnl_tc2.BackColor = System.Drawing.Color.Red;
-            this.pnl_tc2.Location = new System.Drawing.Point(45, 311);
-            this.pnl_tc2.Name = "pnl_tc2";
-            this.pnl_tc2.Size = new System.Drawing.Size(250, 2);
-            this.pnl_tc2.TabIndex = 23;
+            this.panel5.BackColor = System.Drawing.Color.Red;
+            this.panel5.Location = new System.Drawing.Point(691, 84);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(250, 2);
+            this.panel5.TabIndex = 23;
             // 
-            // txt_tc2
+            // txt_surname
             // 
-            this.txt_tc2.BackColor = System.Drawing.Color.White;
-            this.txt_tc2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_tc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_tc2.Location = new System.Drawing.Point(45, 286);
-            this.txt_tc2.Name = "txt_tc2";
-            this.txt_tc2.Size = new System.Drawing.Size(250, 22);
-            this.txt_tc2.TabIndex = 22;
+            this.txt_surname.BackColor = System.Drawing.Color.White;
+            this.txt_surname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_surname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_surname.Location = new System.Drawing.Point(691, 59);
+            this.txt_surname.Name = "txt_surname";
+            this.txt_surname.Size = new System.Drawing.Size(250, 22);
+            this.txt_surname.TabIndex = 22;
             // 
-            // btn_save2
+            // lbl_tc
             // 
-            this.btn_save2.BackColor = System.Drawing.Color.Red;
-            this.btn_save2.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_save2.ForeColor = System.Drawing.Color.White;
-            this.btn_save2.Location = new System.Drawing.Point(421, 365);
-            this.btn_save2.Name = "btn_save2";
-            this.btn_save2.Size = new System.Drawing.Size(170, 38);
-            this.btn_save2.TabIndex = 18;
-            this.btn_save2.Text = "Kaydet";
-            this.btn_save2.UseVisualStyleBackColor = false;
+            this.lbl_tc.AutoSize = true;
+            this.lbl_tc.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lbl_tc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_tc.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_tc.Location = new System.Drawing.Point(45, 59);
+            this.lbl_tc.Name = "lbl_tc";
+            this.lbl_tc.Size = new System.Drawing.Size(29, 20);
+            this.lbl_tc.TabIndex = 21;
+            this.lbl_tc.Text = "TC";
+            this.lbl_tc.Click += new System.EventHandler(this.LabelEffect_Click);
             // 
-            // txt_address2
+            // pnl_tc
             // 
-            this.txt_address2.Location = new System.Drawing.Point(383, 218);
-            this.txt_address2.Multiline = true;
-            this.txt_address2.Name = "txt_address2";
-            this.txt_address2.Size = new System.Drawing.Size(250, 116);
-            this.txt_address2.TabIndex = 17;
+            this.pnl_tc.BackColor = System.Drawing.Color.Red;
+            this.pnl_tc.Location = new System.Drawing.Point(45, 84);
+            this.pnl_tc.Name = "pnl_tc";
+            this.pnl_tc.Size = new System.Drawing.Size(250, 2);
+            this.pnl_tc.TabIndex = 20;
             // 
-            // lbl_address2
+            // txt_tc
             // 
-            this.lbl_address2.AutoSize = true;
-            this.lbl_address2.BackColor = System.Drawing.Color.White;
-            this.lbl_address2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_address2.ForeColor = System.Drawing.Color.Red;
-            this.lbl_address2.Location = new System.Drawing.Point(379, 177);
-            this.lbl_address2.Name = "lbl_address2";
-            this.lbl_address2.Size = new System.Drawing.Size(57, 19);
-            this.lbl_address2.TabIndex = 16;
-            this.lbl_address2.Text = "Adres";
+            this.txt_tc.BackColor = System.Drawing.Color.White;
+            this.txt_tc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_tc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_tc.Location = new System.Drawing.Point(45, 59);
+            this.txt_tc.Name = "txt_tc";
+            this.txt_tc.Size = new System.Drawing.Size(250, 22);
+            this.txt_tc.TabIndex = 19;
             // 
-            // lbl_blood2
+            // btn_save
             // 
-            this.lbl_blood2.AutoSize = true;
-            this.lbl_blood2.BackColor = System.Drawing.Color.White;
-            this.lbl_blood2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_blood2.ForeColor = System.Drawing.Color.Red;
-            this.lbl_blood2.Location = new System.Drawing.Point(721, 141);
-            this.lbl_blood2.Name = "lbl_blood2";
-            this.lbl_blood2.Size = new System.Drawing.Size(101, 19);
-            this.lbl_blood2.TabIndex = 14;
-            this.lbl_blood2.Text = "Kan Grubu";
+            this.btn_save.BackColor = System.Drawing.Color.Red;
+            this.btn_save.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_save.ForeColor = System.Drawing.Color.White;
+            this.btn_save.Location = new System.Drawing.Point(421, 365);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(170, 38);
+            this.btn_save.TabIndex = 18;
+            this.btn_save.Text = "Kaydet";
+            this.btn_save.UseVisualStyleBackColor = false;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
-            // cmb_blood2
+            // txt_address
             // 
-            this.cmb_blood2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.cmb_blood2.FormattingEnabled = true;
-            this.cmb_blood2.Items.AddRange(new object[] {
-            "A+",
-            "0+",
-            "B+",
-            "AB+",
-            "A-",
-            "0-",
-            "B-",
-            "AB-"});
-            this.cmb_blood2.Location = new System.Drawing.Point(725, 175);
-            this.cmb_blood2.Name = "cmb_blood2";
-            this.cmb_blood2.Size = new System.Drawing.Size(220, 32);
-            this.cmb_blood2.TabIndex = 15;
+            this.txt_address.Location = new System.Drawing.Point(49, 285);
+            this.txt_address.Multiline = true;
+            this.txt_address.Name = "txt_address";
+            this.txt_address.Size = new System.Drawing.Size(250, 116);
+            this.txt_address.TabIndex = 17;
             // 
-            // lbl_phone2
+            // lbl_address
             // 
-            this.lbl_phone2.AutoSize = true;
-            this.lbl_phone2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lbl_phone2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_phone2.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_phone2.Location = new System.Drawing.Point(45, 170);
-            this.lbl_phone2.Name = "lbl_phone2";
-            this.lbl_phone2.Size = new System.Drawing.Size(62, 20);
-            this.lbl_phone2.TabIndex = 13;
-            this.lbl_phone2.Text = "Telefon";
-            this.lbl_phone2.Click += new System.EventHandler(this.LabelEffect_Click);
+            this.lbl_address.AutoSize = true;
+            this.lbl_address.BackColor = System.Drawing.Color.White;
+            this.lbl_address.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_address.ForeColor = System.Drawing.Color.Red;
+            this.lbl_address.Location = new System.Drawing.Point(45, 244);
+            this.lbl_address.Name = "lbl_address";
+            this.lbl_address.Size = new System.Drawing.Size(57, 19);
+            this.lbl_address.TabIndex = 16;
+            this.lbl_address.Text = "Adres";
             // 
-            // pnl_phone2
+            // lbl_blood
             // 
-            this.pnl_phone2.BackColor = System.Drawing.Color.Red;
-            this.pnl_phone2.Location = new System.Drawing.Point(45, 195);
-            this.pnl_phone2.Name = "pnl_phone2";
-            this.pnl_phone2.Size = new System.Drawing.Size(250, 2);
-            this.pnl_phone2.TabIndex = 12;
+            this.lbl_blood.AutoSize = true;
+            this.lbl_blood.BackColor = System.Drawing.Color.White;
+            this.lbl_blood.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_blood.ForeColor = System.Drawing.Color.Red;
+            this.lbl_blood.Location = new System.Drawing.Point(45, 123);
+            this.lbl_blood.Name = "lbl_blood";
+            this.lbl_blood.Size = new System.Drawing.Size(101, 19);
+            this.lbl_blood.TabIndex = 14;
+            this.lbl_blood.Text = "Kan Grubu";
             // 
-            // txt_phone2
+            // cmb_blood
             // 
-            this.txt_phone2.BackColor = System.Drawing.Color.White;
-            this.txt_phone2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_phone2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_phone2.Location = new System.Drawing.Point(45, 170);
-            this.txt_phone2.Name = "txt_phone2";
-            this.txt_phone2.Size = new System.Drawing.Size(250, 22);
-            this.txt_phone2.TabIndex = 2;
+            this.cmb_blood.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.cmb_blood.FormattingEnabled = true;
+            this.cmb_blood.Location = new System.Drawing.Point(49, 157);
+            this.cmb_blood.Name = "cmb_blood";
+            this.cmb_blood.Size = new System.Drawing.Size(220, 32);
+            this.cmb_blood.TabIndex = 15;
             // 
-            // lbl_age2
+            // lbl_phone
             // 
-            this.lbl_age2.AutoSize = true;
-            this.lbl_age2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lbl_age2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_age2.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_age2.Location = new System.Drawing.Point(383, 54);
-            this.lbl_age2.Name = "lbl_age2";
-            this.lbl_age2.Size = new System.Drawing.Size(37, 20);
-            this.lbl_age2.TabIndex = 10;
-            this.lbl_age2.Text = "Yaş";
-            this.lbl_age2.Click += new System.EventHandler(this.LabelEffect_Click);
+            this.lbl_phone.AutoSize = true;
+            this.lbl_phone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lbl_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_phone.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_phone.Location = new System.Drawing.Point(358, 249);
+            this.lbl_phone.Name = "lbl_phone";
+            this.lbl_phone.Size = new System.Drawing.Size(62, 20);
+            this.lbl_phone.TabIndex = 13;
+            this.lbl_phone.Text = "Telefon";
+            this.lbl_phone.Click += new System.EventHandler(this.LabelEffect_Click);
             // 
-            // pnl_age2
+            // pnl_phone
             // 
-            this.pnl_age2.BackColor = System.Drawing.Color.Red;
-            this.pnl_age2.Location = new System.Drawing.Point(383, 79);
-            this.pnl_age2.Name = "pnl_age2";
-            this.pnl_age2.Size = new System.Drawing.Size(250, 2);
-            this.pnl_age2.TabIndex = 9;
+            this.pnl_phone.BackColor = System.Drawing.Color.Red;
+            this.pnl_phone.Location = new System.Drawing.Point(358, 274);
+            this.pnl_phone.Name = "pnl_phone";
+            this.pnl_phone.Size = new System.Drawing.Size(250, 2);
+            this.pnl_phone.TabIndex = 12;
             // 
-            // txt_age2
+            // txt_phone
             // 
-            this.txt_age2.BackColor = System.Drawing.Color.White;
-            this.txt_age2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_age2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_age2.Location = new System.Drawing.Point(383, 54);
-            this.txt_age2.Name = "txt_age2";
-            this.txt_age2.Size = new System.Drawing.Size(250, 22);
-            this.txt_age2.TabIndex = 1;
+            this.txt_phone.BackColor = System.Drawing.Color.White;
+            this.txt_phone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_phone.Location = new System.Drawing.Point(358, 249);
+            this.txt_phone.Name = "txt_phone";
+            this.txt_phone.Size = new System.Drawing.Size(250, 22);
+            this.txt_phone.TabIndex = 2;
             // 
-            // lbl_gender2
+            // lbl_age
             // 
-            this.lbl_gender2.AutoSize = true;
-            this.lbl_gender2.BackColor = System.Drawing.Color.White;
-            this.lbl_gender2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_gender2.ForeColor = System.Drawing.Color.Red;
-            this.lbl_gender2.Location = new System.Drawing.Point(721, 29);
-            this.lbl_gender2.Name = "lbl_gender2";
-            this.lbl_gender2.Size = new System.Drawing.Size(78, 19);
-            this.lbl_gender2.TabIndex = 6;
-            this.lbl_gender2.Text = "Cinsiyet";
+            this.lbl_age.AutoSize = true;
+            this.lbl_age.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lbl_age.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_age.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_age.Location = new System.Drawing.Point(358, 157);
+            this.lbl_age.Name = "lbl_age";
+            this.lbl_age.Size = new System.Drawing.Size(37, 20);
+            this.lbl_age.TabIndex = 10;
+            this.lbl_age.Text = "Yaş";
+            this.lbl_age.Click += new System.EventHandler(this.LabelEffect_Click);
             // 
-            // cmb_gender2
+            // pnl_age
             // 
-            this.cmb_gender2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.cmb_gender2.FormattingEnabled = true;
-            this.cmb_gender2.Items.AddRange(new object[] {
-            "Erkek",
-            "Kadın"});
-            this.cmb_gender2.Location = new System.Drawing.Point(725, 60);
-            this.cmb_gender2.Name = "cmb_gender2";
-            this.cmb_gender2.Size = new System.Drawing.Size(220, 32);
-            this.cmb_gender2.TabIndex = 7;
+            this.pnl_age.BackColor = System.Drawing.Color.Red;
+            this.pnl_age.Location = new System.Drawing.Point(358, 182);
+            this.pnl_age.Name = "pnl_age";
+            this.pnl_age.Size = new System.Drawing.Size(250, 2);
+            this.pnl_age.TabIndex = 9;
             // 
-            // lbl_name2
+            // txt_age
             // 
-            this.lbl_name2.AutoSize = true;
-            this.lbl_name2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lbl_name2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_name2.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_name2.Location = new System.Drawing.Point(45, 54);
-            this.lbl_name2.Name = "lbl_name2";
-            this.lbl_name2.Size = new System.Drawing.Size(38, 20);
-            this.lbl_name2.TabIndex = 2;
-            this.lbl_name2.Text = "İsim";
-            this.lbl_name2.Click += new System.EventHandler(this.LabelEffect_Click);
+            this.txt_age.BackColor = System.Drawing.Color.White;
+            this.txt_age.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_age.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_age.Location = new System.Drawing.Point(358, 157);
+            this.txt_age.Name = "txt_age";
+            this.txt_age.Size = new System.Drawing.Size(250, 22);
+            this.txt_age.TabIndex = 1;
             // 
-            // pnl_name2
+            // lbl_gender
             // 
-            this.pnl_name2.BackColor = System.Drawing.Color.Red;
-            this.pnl_name2.Location = new System.Drawing.Point(45, 79);
-            this.pnl_name2.Name = "pnl_name2";
-            this.pnl_name2.Size = new System.Drawing.Size(250, 2);
-            this.pnl_name2.TabIndex = 1;
+            this.lbl_gender.AutoSize = true;
+            this.lbl_gender.BackColor = System.Drawing.Color.White;
+            this.lbl_gender.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_gender.ForeColor = System.Drawing.Color.Red;
+            this.lbl_gender.Location = new System.Drawing.Point(679, 126);
+            this.lbl_gender.Name = "lbl_gender";
+            this.lbl_gender.Size = new System.Drawing.Size(78, 19);
+            this.lbl_gender.TabIndex = 6;
+            this.lbl_gender.Text = "Cinsiyet";
             // 
-            // txt_name2
+            // cmb_gender
             // 
-            this.txt_name2.BackColor = System.Drawing.Color.White;
-            this.txt_name2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_name2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_name2.Location = new System.Drawing.Point(45, 54);
-            this.txt_name2.Name = "txt_name2";
-            this.txt_name2.Size = new System.Drawing.Size(250, 22);
-            this.txt_name2.TabIndex = 0;
+            this.cmb_gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.cmb_gender.FormattingEnabled = true;
+            this.cmb_gender.Location = new System.Drawing.Point(683, 157);
+            this.cmb_gender.Name = "cmb_gender";
+            this.cmb_gender.Size = new System.Drawing.Size(220, 32);
+            this.cmb_gender.TabIndex = 7;
+            // 
+            // lbl_name
+            // 
+            this.lbl_name.AutoSize = true;
+            this.lbl_name.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lbl_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_name.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_name.Location = new System.Drawing.Point(358, 59);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(29, 20);
+            this.lbl_name.TabIndex = 2;
+            this.lbl_name.Text = "Ad";
+            this.lbl_name.Click += new System.EventHandler(this.LabelEffect_Click);
+            // 
+            // pnl_name
+            // 
+            this.pnl_name.BackColor = System.Drawing.Color.Red;
+            this.pnl_name.Location = new System.Drawing.Point(358, 84);
+            this.pnl_name.Name = "pnl_name";
+            this.pnl_name.Size = new System.Drawing.Size(250, 2);
+            this.pnl_name.TabIndex = 1;
+            // 
+            // txt_name
+            // 
+            this.txt_name.BackColor = System.Drawing.Color.White;
+            this.txt_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_name.Location = new System.Drawing.Point(358, 59);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(250, 22);
+            this.txt_name.TabIndex = 0;
             // 
             // label10
             // 
@@ -464,10 +490,10 @@ namespace KBYSİ
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(569, 74);
+            this.label10.Location = new System.Drawing.Point(574, 74);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(319, 32);
-            this.label10.TabIndex = 22;
+            this.label10.TabIndex = 20;
             this.label10.Text = "Hasta Ekleme Ekranı";
             // 
             // Patient
@@ -476,23 +502,24 @@ namespace KBYSİ
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1268, 630);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pnl_patient2);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Patient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Patient";
+            this.Load += new System.EventHandler(this.Patient_Load);
             this.Click += new System.EventHandler(this.LabelEffect_Click);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnl_patient2.ResumeLayout(false);
-            this.pnl_patient2.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -513,26 +540,29 @@ namespace KBYSİ
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel pnl_patient2;
-        private System.Windows.Forms.Button btn_save2;
-        private System.Windows.Forms.TextBox txt_address2;
-        private System.Windows.Forms.Label lbl_address2;
-        private System.Windows.Forms.Label lbl_blood2;
-        private System.Windows.Forms.ComboBox cmb_blood2;
-        private System.Windows.Forms.Label lbl_phone2;
-        private System.Windows.Forms.Panel pnl_phone2;
-        private System.Windows.Forms.TextBox txt_phone2;
-        private System.Windows.Forms.Label lbl_age2;
-        private System.Windows.Forms.Panel pnl_age2;
-        private System.Windows.Forms.TextBox txt_age2;
-        private System.Windows.Forms.Label lbl_gender2;
-        private System.Windows.Forms.ComboBox cmb_gender2;
-        private System.Windows.Forms.Label lbl_name2;
-        private System.Windows.Forms.Panel pnl_name2;
-        private System.Windows.Forms.TextBox txt_name2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox txt_surname;
+        private System.Windows.Forms.Label lbl_tc;
+        private System.Windows.Forms.Panel pnl_tc;
+        private System.Windows.Forms.TextBox txt_tc;
+        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.TextBox txt_address;
+        private System.Windows.Forms.Label lbl_address;
+        private System.Windows.Forms.Label lbl_blood;
+        private System.Windows.Forms.ComboBox cmb_blood;
+        private System.Windows.Forms.Label lbl_phone;
+        private System.Windows.Forms.Panel pnl_phone;
+        private System.Windows.Forms.TextBox txt_phone;
+        private System.Windows.Forms.Label lbl_age;
+        private System.Windows.Forms.Panel pnl_age;
+        private System.Windows.Forms.TextBox txt_age;
+        private System.Windows.Forms.Label lbl_gender;
+        private System.Windows.Forms.ComboBox cmb_gender;
+        private System.Windows.Forms.Label lbl_name;
+        private System.Windows.Forms.Panel pnl_name;
+        private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label lbl_tc2;
-        private System.Windows.Forms.Panel pnl_tc2;
-        private System.Windows.Forms.TextBox txt_tc2;
     }
 }

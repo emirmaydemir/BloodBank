@@ -29,6 +29,8 @@ namespace KBYSİ
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -330,9 +332,6 @@ namespace KBYSİ
             // 
             this.cmb_gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.cmb_gender.FormattingEnabled = true;
-            this.cmb_gender.Items.AddRange(new object[] {
-            "Erkek",
-            "Kadın"});
             this.cmb_gender.Location = new System.Drawing.Point(935, 227);
             this.cmb_gender.Name = "cmb_gender";
             this.cmb_gender.Size = new System.Drawing.Size(220, 32);
@@ -354,15 +353,6 @@ namespace KBYSİ
             // 
             this.cmb_blood.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.cmb_blood.FormattingEnabled = true;
-            this.cmb_blood.Items.AddRange(new object[] {
-            "A+",
-            "0+",
-            "B+",
-            "AB+",
-            "A-",
-            "0-",
-            "B-",
-            "AB-"});
             this.cmb_blood.Location = new System.Drawing.Point(305, 230);
             this.cmb_blood.Name = "cmb_blood";
             this.cmb_blood.Size = new System.Drawing.Size(220, 32);
@@ -399,6 +389,7 @@ namespace KBYSİ
             this.btn_save.TabIndex = 39;
             this.btn_save.Text = "Kaydet";
             this.btn_save.UseVisualStyleBackColor = false;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // btn_delete
             // 
@@ -411,14 +402,35 @@ namespace KBYSİ
             this.btn_delete.TabIndex = 40;
             this.btn_delete.Text = "Sil";
             this.btn_delete.UseVisualStyleBackColor = false;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // grd_patients
             // 
+            this.grd_patients.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grd_patients.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grd_patients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.grd_patients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grd_patients.DefaultCellStyle = dataGridViewCellStyle2;
+            this.grd_patients.EnableHeadersVisualStyles = false;
             this.grd_patients.Location = new System.Drawing.Point(305, 385);
             this.grd_patients.Name = "grd_patients";
             this.grd_patients.Size = new System.Drawing.Size(850, 219);
             this.grd_patients.TabIndex = 41;
+            this.grd_patients.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grd_patients_CellClick);
             // 
             // lbl_Vtc
             // 
