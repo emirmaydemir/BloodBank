@@ -31,6 +31,7 @@ namespace KBYSİ
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,12 +58,25 @@ namespace KBYSİ
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(190, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1078, 59);
             this.panel2.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.Location = new System.Drawing.Point(1044, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(34, 33);
+            this.label10.TabIndex = 11;
+            this.label10.Text = "X";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label1
             // 
@@ -83,7 +97,7 @@ namespace KBYSİ
             this.pictureBox1.Size = new System.Drawing.Size(1078, 571);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;        
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -235,6 +249,7 @@ namespace KBYSİ
             this.label9.Size = new System.Drawing.Size(69, 25);
             this.label9.TabIndex = 17;
             this.label9.Text = "Çıkış";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // panel1
             // 
@@ -302,5 +317,6 @@ namespace KBYSİ
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label10;
     }
 }

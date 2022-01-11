@@ -169,5 +169,17 @@ namespace KBYSİ
             dash.Show();
             this.Hide();
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            Login l = new Login();
+            l.Show();
+            this.Hide();
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

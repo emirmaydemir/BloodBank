@@ -136,6 +136,7 @@ namespace KBYSİ
             this.label5.Size = new System.Drawing.Size(27, 25);
             this.label5.TabIndex = 10;
             this.label5.Text = "X";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Login
             // 

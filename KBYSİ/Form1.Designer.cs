@@ -29,11 +29,13 @@ namespace KBYSİ
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
-            this.ProgressBar1 = new CircularProgressBar.CircularProgressBar();
+            this.ProgressBar = new CircularProgressBar.CircularProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,37 +50,37 @@ namespace KBYSİ
             this.label1.TabIndex = 0;
             this.label1.Text = "KAN BANKASI YÖNETİM SİSTEMİ";
             // 
-            // ProgressBar1
+            // ProgressBar
             // 
-            this.ProgressBar1.AnimationFunction = ((WinFormAnimation.AnimationFunctions.Function)(resources.GetObject("ProgressBar1.AnimationFunction")));
-            this.ProgressBar1.AnimationSpeed = 500;
-            this.ProgressBar1.BackColor = System.Drawing.Color.Snow;
-            this.ProgressBar1.Font = new System.Drawing.Font("Myanmar Text", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProgressBar1.ForeColor = System.Drawing.Color.Red;
-            this.ProgressBar1.InnerColor = System.Drawing.Color.Transparent;
-            this.ProgressBar1.InnerMargin = 2;
-            this.ProgressBar1.InnerWidth = -1;
-            this.ProgressBar1.Location = new System.Drawing.Point(217, 86);
-            this.ProgressBar1.MarqueeAnimationSpeed = 2000;
-            this.ProgressBar1.Name = "ProgressBar1";
-            this.ProgressBar1.OuterColor = System.Drawing.Color.Black;
-            this.ProgressBar1.OuterMargin = -25;
-            this.ProgressBar1.OuterWidth = 26;
-            this.ProgressBar1.ProgressColor = System.Drawing.Color.Red;
-            this.ProgressBar1.ProgressWidth = 6;
-            this.ProgressBar1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.ProgressBar1.Size = new System.Drawing.Size(169, 172);
-            this.ProgressBar1.StartAngle = 270;
-            this.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.ProgressBar1.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.ProgressBar1.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.ProgressBar1.SubscriptText = ".23";
-            this.ProgressBar1.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.ProgressBar1.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.ProgressBar1.SuperscriptText = "°C";
-            this.ProgressBar1.TabIndex = 1;
-            this.ProgressBar1.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-            this.ProgressBar1.Value = 68;
+            this.ProgressBar.AnimationFunction = ((WinFormAnimation.AnimationFunctions.Function)(resources.GetObject("ProgressBar.AnimationFunction")));
+            this.ProgressBar.AnimationSpeed = 500;
+            this.ProgressBar.BackColor = System.Drawing.Color.Snow;
+            this.ProgressBar.Font = new System.Drawing.Font("Myanmar Text", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProgressBar.ForeColor = System.Drawing.Color.Red;
+            this.ProgressBar.InnerColor = System.Drawing.Color.Transparent;
+            this.ProgressBar.InnerMargin = 2;
+            this.ProgressBar.InnerWidth = -1;
+            this.ProgressBar.Location = new System.Drawing.Point(217, 86);
+            this.ProgressBar.MarqueeAnimationSpeed = 2000;
+            this.ProgressBar.Name = "ProgressBar";
+            this.ProgressBar.OuterColor = System.Drawing.Color.Black;
+            this.ProgressBar.OuterMargin = -25;
+            this.ProgressBar.OuterWidth = 26;
+            this.ProgressBar.ProgressColor = System.Drawing.Color.Red;
+            this.ProgressBar.ProgressWidth = 10;
+            this.ProgressBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.ProgressBar.Size = new System.Drawing.Size(169, 172);
+            this.ProgressBar.StartAngle = 270;
+            this.ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.ProgressBar.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.ProgressBar.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.ProgressBar.SubscriptText = ".23";
+            this.ProgressBar.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.ProgressBar.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.ProgressBar.SuperscriptText = "°C";
+            this.ProgressBar.TabIndex = 1;
+            this.ProgressBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.ProgressBar.Value = 68;
             // 
             // pictureBox1
             // 
@@ -101,6 +103,10 @@ namespace KBYSİ
             this.label2.TabIndex = 3;
             this.label2.Text = "Yükleniyor...";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -109,7 +115,7 @@ namespace KBYSİ
             this.ClientSize = new System.Drawing.Size(612, 336);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.ProgressBar1);
+            this.Controls.Add(this.ProgressBar);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -117,6 +123,7 @@ namespace KBYSİ
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -126,9 +133,10 @@ namespace KBYSİ
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private CircularProgressBar.CircularProgressBar ProgressBar1;
+        private CircularProgressBar.CircularProgressBar ProgressBar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

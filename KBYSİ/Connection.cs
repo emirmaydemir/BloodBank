@@ -11,7 +11,7 @@ namespace KBYSİ
     {
         public SqlConnection openConnection()
         {
-            SqlConnection connection = new SqlConnection("Data Source=KADIR;Initial Catalog=BloodBank;Integrated Security=True");
+            SqlConnection connection = new SqlConnection("Data Source=LAPTOP-NF2BKIK9\\SQLEXPRESS;Initial Catalog=BloodBank;Integrated Security=True");
             connection.Open();
             return connection;
         }

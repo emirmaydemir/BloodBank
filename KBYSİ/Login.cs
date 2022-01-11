@@ -60,5 +60,10 @@ namespace KBYSİ
             txt_id.Clear();
             txt_password.Clear();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

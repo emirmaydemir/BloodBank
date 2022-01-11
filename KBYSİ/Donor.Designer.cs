@@ -41,9 +41,13 @@ namespace KBYSİ
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.txt_surname = new System.Windows.Forms.TextBox();
             this.lbl_tc = new System.Windows.Forms.Label();
             this.pnl_tc = new System.Windows.Forms.Panel();
             this.txt_tc = new System.Windows.Forms.TextBox();
@@ -64,9 +68,6 @@ namespace KBYSİ
             this.pnl_name = new System.Windows.Forms.Panel();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.txt_surname = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -101,6 +102,7 @@ namespace KBYSİ
             this.label9.Size = new System.Drawing.Size(69, 25);
             this.label9.TabIndex = 17;
             this.label9.Text = "Çıkış";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -196,12 +198,25 @@ namespace KBYSİ
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(190, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1078, 59);
             this.panel2.TabIndex = 2;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.ForeColor = System.Drawing.Color.Red;
+            this.label12.Location = new System.Drawing.Point(1044, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(34, 33);
+            this.label12.TabIndex = 20;
+            this.label12.Text = "X";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label1
             // 
@@ -255,6 +270,37 @@ namespace KBYSİ
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1026, 427);
             this.panel4.TabIndex = 5;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.ForeColor = System.Drawing.Color.Silver;
+            this.label11.Location = new System.Drawing.Point(691, 59);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(54, 20);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Soyad";
+            this.label11.Click += new System.EventHandler(this.LabelEffect_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Red;
+            this.panel5.Location = new System.Drawing.Point(691, 84);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(250, 2);
+            this.panel5.TabIndex = 23;
+            // 
+            // txt_surname
+            // 
+            this.txt_surname.BackColor = System.Drawing.Color.White;
+            this.txt_surname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_surname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_surname.Location = new System.Drawing.Point(691, 59);
+            this.txt_surname.Name = "txt_surname";
+            this.txt_surname.Size = new System.Drawing.Size(250, 22);
+            this.txt_surname.TabIndex = 22;
             // 
             // lbl_tc
             // 
@@ -465,37 +511,6 @@ namespace KBYSİ
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.ForeColor = System.Drawing.Color.Silver;
-            this.label11.Location = new System.Drawing.Point(691, 59);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 20);
-            this.label11.TabIndex = 24;
-            this.label11.Text = "Soyad";
-            this.label11.Click += new System.EventHandler(this.LabelEffect_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Red;
-            this.panel5.Location = new System.Drawing.Point(691, 84);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(250, 2);
-            this.panel5.TabIndex = 23;
-            // 
-            // txt_surname
-            // 
-            this.txt_surname.BackColor = System.Drawing.Color.White;
-            this.txt_surname.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_surname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_surname.Location = new System.Drawing.Point(691, 59);
-            this.txt_surname.Name = "txt_surname";
-            this.txt_surname.Size = new System.Drawing.Size(250, 22);
-            this.txt_surname.TabIndex = 22;
-            // 
             // Donor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -563,5 +578,6 @@ namespace KBYSİ
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox txt_surname;
+        private System.Windows.Forms.Label label12;
     }
 }

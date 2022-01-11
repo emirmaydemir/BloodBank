@@ -42,6 +42,7 @@ namespace KBYSİ
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -101,6 +102,7 @@ namespace KBYSİ
             this.label9.Size = new System.Drawing.Size(69, 25);
             this.label9.TabIndex = 17;
             this.label9.Text = "Çıkış";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -196,12 +198,25 @@ namespace KBYSİ
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(190, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1078, 59);
             this.panel2.TabIndex = 3;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.ForeColor = System.Drawing.Color.Red;
+            this.label14.Location = new System.Drawing.Point(1044, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(34, 33);
+            this.label14.TabIndex = 73;
+            this.label14.Text = "X";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // label1
             // 
@@ -579,5 +594,6 @@ namespace KBYSİ
         private System.Windows.Forms.Panel pnl_name2;
         private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label14;
     }
 }
