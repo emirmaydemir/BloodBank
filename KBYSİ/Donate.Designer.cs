@@ -29,6 +29,10 @@ namespace KBYSİ
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -45,18 +49,18 @@ namespace KBYSİ
             this.label11 = new System.Windows.Forms.Label();
             this.lbl_name2 = new System.Windows.Forms.Label();
             this.pnl_age2 = new System.Windows.Forms.Panel();
-            this.txt_age2 = new System.Windows.Forms.TextBox();
+            this.txt_blood = new System.Windows.Forms.TextBox();
             this.pnl_name2 = new System.Windows.Forms.Panel();
-            this.txt_name2 = new System.Windows.Forms.TextBox();
+            this.txt_name = new System.Windows.Forms.TextBox();
             this.btn_save = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.grd_BloodStock = new System.Windows.Forms.DataGridView();
+            this.grd_Donor = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_BloodStock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_Donor)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -244,15 +248,15 @@ namespace KBYSİ
             this.pnl_age2.Size = new System.Drawing.Size(200, 2);
             this.pnl_age2.TabIndex = 35;
             // 
-            // txt_age2
+            // txt_blood
             // 
-            this.txt_age2.BackColor = System.Drawing.Color.White;
-            this.txt_age2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_age2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_age2.Location = new System.Drawing.Point(800, 500);
-            this.txt_age2.Name = "txt_age2";
-            this.txt_age2.Size = new System.Drawing.Size(200, 22);
-            this.txt_age2.TabIndex = 34;
+            this.txt_blood.BackColor = System.Drawing.Color.White;
+            this.txt_blood.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_blood.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_blood.Location = new System.Drawing.Point(800, 500);
+            this.txt_blood.Name = "txt_blood";
+            this.txt_blood.Size = new System.Drawing.Size(200, 22);
+            this.txt_blood.TabIndex = 34;
             // 
             // pnl_name2
             // 
@@ -262,15 +266,15 @@ namespace KBYSİ
             this.pnl_name2.Size = new System.Drawing.Size(200, 2);
             this.pnl_name2.TabIndex = 33;
             // 
-            // txt_name2
+            // txt_name
             // 
-            this.txt_name2.BackColor = System.Drawing.Color.White;
-            this.txt_name2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_name2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_name2.Location = new System.Drawing.Point(473, 500);
-            this.txt_name2.Name = "txt_name2";
-            this.txt_name2.Size = new System.Drawing.Size(200, 22);
-            this.txt_name2.TabIndex = 32;
+            this.txt_name.BackColor = System.Drawing.Color.White;
+            this.txt_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_name.Location = new System.Drawing.Point(473, 500);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(200, 22);
+            this.txt_name.TabIndex = 32;
             // 
             // btn_save
             // 
@@ -283,22 +287,61 @@ namespace KBYSİ
             this.btn_save.TabIndex = 38;
             this.btn_save.Text = "Bağış";
             this.btn_save.UseVisualStyleBackColor = false;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
-            // dataGridView1
+            // grd_BloodStock
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(211, 150);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(271, 269);
-            this.dataGridView1.TabIndex = 39;
+            this.grd_BloodStock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grd_BloodStock.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grd_BloodStock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.grd_BloodStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grd_BloodStock.DefaultCellStyle = dataGridViewCellStyle6;
+            this.grd_BloodStock.EnableHeadersVisualStyles = false;
+            this.grd_BloodStock.Location = new System.Drawing.Point(211, 150);
+            this.grd_BloodStock.Name = "grd_BloodStock";
+            this.grd_BloodStock.Size = new System.Drawing.Size(271, 269);
+            this.grd_BloodStock.TabIndex = 39;
             // 
-            // dataGridView2
+            // grd_Donor
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(590, 150);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(657, 269);
-            this.dataGridView2.TabIndex = 40;
+            this.grd_Donor.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grd_Donor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.grd_Donor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grd_Donor.DefaultCellStyle = dataGridViewCellStyle8;
+            this.grd_Donor.EnableHeadersVisualStyles = false;
+            this.grd_Donor.Location = new System.Drawing.Point(590, 150);
+            this.grd_Donor.Name = "grd_Donor";
+            this.grd_Donor.Size = new System.Drawing.Size(657, 269);
+            this.grd_Donor.TabIndex = 40;
+            this.grd_Donor.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grd_Donor_CellClick);
             // 
             // label12
             // 
@@ -332,15 +375,15 @@ namespace KBYSİ
             this.ClientSize = new System.Drawing.Size(1268, 630);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grd_Donor);
+            this.Controls.Add(this.grd_BloodStock);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.lbl_name2);
             this.Controls.Add(this.pnl_age2);
-            this.Controls.Add(this.txt_age2);
+            this.Controls.Add(this.txt_blood);
             this.Controls.Add(this.pnl_name2);
-            this.Controls.Add(this.txt_name2);
+            this.Controls.Add(this.txt_name);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -348,12 +391,13 @@ namespace KBYSİ
             this.Name = "Donate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Donate";
+            this.Load += new System.EventHandler(this.Donate_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_BloodStock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd_Donor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -377,12 +421,12 @@ namespace KBYSİ
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lbl_name2;
         private System.Windows.Forms.Panel pnl_age2;
-        private System.Windows.Forms.TextBox txt_age2;
+        private System.Windows.Forms.TextBox txt_blood;
         private System.Windows.Forms.Panel pnl_name2;
-        private System.Windows.Forms.TextBox txt_name2;
+        private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.Button btn_save;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView grd_BloodStock;
+        private System.Windows.Forms.DataGridView grd_Donor;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
     }
