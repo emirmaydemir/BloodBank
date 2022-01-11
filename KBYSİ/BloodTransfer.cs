@@ -13,6 +13,7 @@ namespace KBYSİ
 {
     public partial class BloodTransfer : Form
     {
+        int sayac = 0;
         Connection con = new Connection();
         String Tc;
         string availableblood = "";
@@ -58,18 +59,14 @@ namespace KBYSİ
             SqlCommand givenCom = new SqlCommand(getGivenBlood, con.openConnection());
             readGiven = givenCom.ExecuteReader();
             String givenb="";
-            int sayac = 0;        
+                    
             while (readGiven.Read())
             {
-                //string getbId = "SELECT Id FROM BloodGroup WHERE BloodGroup='" + readGiven[0].ToString() + "'";
-                //SqlCommand getbCom = new SqlCommand(getbId, con.openConnection());
-                //int bloId = ((int)getbCom.ExecuteScalar());
-
                 string getBloodStock = "SELECT Stock FROM BloodST WHERE BloodGroup='" + readGiven[0].ToString() + "'";
                 SqlCommand commm = new SqlCommand(getBloodStock, con.openConnection());
                 int getBloodStockk = ((int)commm.ExecuteScalar());
 
-                MessageBox.Show(readGiven[0].ToString() +"    "+Convert.ToString(getBloodStockk));
+                //MessageBox.Show(readGiven[0].ToString() +"    "+Convert.ToString(getBloodStockk));
 
                 if(Convert.ToInt32(getBloodStockk) > 0)
                 {
@@ -87,7 +84,6 @@ namespace KBYSİ
             {
                 label12.Text = "Aranan kana uygun kan grubu bulunamamıştır";
             }
-            //givenb = givenb + readGiven[0].ToString();
 
         }
 
@@ -97,23 +93,31 @@ namespace KBYSİ
         }
         public void updateTrasnferr()
         {
-            if (txt_name.Text != "" && txt_blood.Text != "" && cmb_tc.SelectedIndex != -1)
+            if (sayac > 0)
             {
-                string getbId = "SELECT Id FROM BloodGroup WHERE BloodGroup='" + availableblood + "'";
-                SqlCommand getbCom = new SqlCommand(getbId, con.openConnection());
-                int bloId = ((int)getbCom.ExecuteScalar());
+                if (txt_name.Text != "" && txt_blood.Text != "" && cmb_tc.SelectedIndex != -1)
+                {
+                    string getbId = "SELECT Id FROM BloodGroup WHERE BloodGroup='" + availableblood + "'";
+                    SqlCommand getbCom = new SqlCommand(getbId, con.openConnection());
+                    int bloId = ((int)getbCom.ExecuteScalar());
 
-                string decreaseStock = "UPDATE BloodStock SET Stock = Stock - 1 WHERE BloodGroupId = '" + bloId + "'";
-                SqlCommand command = new SqlCommand(decreaseStock, con.openConnection());
-                command.ExecuteNonQuery();
-                con.openConnection().Close();
-                controlsClear();
-                MessageBox.Show("Aktarıldı.");
+                    string decreaseStock = "UPDATE BloodStock SET Stock = Stock - 1 WHERE BloodGroupId = '" + bloId + "'";
+                    SqlCommand command = new SqlCommand(decreaseStock, con.openConnection());
+                    command.ExecuteNonQuery();
+                    con.openConnection().Close();
+                    controlsClear();
+                    MessageBox.Show("Aktarıldı.");
+                }
+                else
+                {
+                    MessageBox.Show("Hicbir alan bos birakilamaz.");
+                }
             }
             else
             {
-                MessageBox.Show("Hicbir alan bos birakilamaz.");
+                MessageBox.Show("Aranan kana uygun kan grubu bulunamamistir.");
             }
+            
         }
         public void controlsClear()
         {

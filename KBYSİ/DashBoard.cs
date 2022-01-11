@@ -73,7 +73,7 @@ namespace KBYSİ
             }
             else
             {
-                lbl_abPlus.Text = "0";
+                lbl_aPlus.Text = "0";
                 cpb_APlus.Value = 0;
             }
 
