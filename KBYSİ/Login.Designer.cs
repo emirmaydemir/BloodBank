@@ -33,10 +33,10 @@ namespace KBYSİ
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_id = new System.Windows.Forms.TextBox();
+            this.txt_password = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_login = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,25 +70,26 @@ namespace KBYSİ
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(113, 187);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 23);
+            this.label2.Size = new System.Drawing.Size(133, 23);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Kullanıcı Adı";
+            this.label2.Text = "TC Kimlik No";
             // 
-            // textBox1
+            // txt_id
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(262, 185);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 31);
-            this.textBox1.TabIndex = 5;
+            this.txt_id.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_id.Location = new System.Drawing.Point(262, 185);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.Size = new System.Drawing.Size(191, 31);
+            this.txt_id.TabIndex = 5;
             // 
-            // textBox2
+            // txt_password
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(262, 247);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 31);
-            this.textBox2.TabIndex = 7;
+            this.txt_password.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_password.Location = new System.Drawing.Point(262, 247);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.Size = new System.Drawing.Size(191, 31);
+            this.txt_password.TabIndex = 7;
+            this.txt_password.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -101,17 +102,18 @@ namespace KBYSİ
             this.label3.TabIndex = 6;
             this.label3.Text = "Şifre";
             // 
-            // button1
+            // btn_login
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(169, 305);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(227, 38);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Giriş";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_login.BackColor = System.Drawing.Color.Red;
+            this.btn_login.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_login.ForeColor = System.Drawing.Color.White;
+            this.btn_login.Location = new System.Drawing.Point(169, 305);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(227, 38);
+            this.btn_login.TabIndex = 8;
+            this.btn_login.Text = "Giriş";
+            this.btn_login.UseVisualStyleBackColor = false;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // label4
             // 
@@ -143,10 +145,10 @@ namespace KBYSİ
             this.ClientSize = new System.Drawing.Size(585, 397);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btn_login);
+            this.Controls.Add(this.txt_password);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_id);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -165,10 +167,10 @@ namespace KBYSİ
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_id;
+        private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
     }
