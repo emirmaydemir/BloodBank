@@ -44,13 +44,13 @@ namespace KBYSİ
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.lbl_gender = new System.Windows.Forms.Label();
-            this.cmb_gender = new System.Windows.Forms.ComboBox();
+            this.cmb_tc = new System.Windows.Forms.ComboBox();
             this.lbl_name2 = new System.Windows.Forms.Label();
             this.pnl_name2 = new System.Windows.Forms.Panel();
-            this.txt_name2 = new System.Windows.Forms.TextBox();
+            this.txt_name = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_blood = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -224,17 +224,15 @@ namespace KBYSİ
             this.lbl_gender.TabIndex = 25;
             this.lbl_gender.Text = "TC";
             // 
-            // cmb_gender
+            // cmb_tc
             // 
-            this.cmb_gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.cmb_gender.FormattingEnabled = true;
-            this.cmb_gender.Items.AddRange(new object[] {
-            "Erkek",
-            "Kadın"});
-            this.cmb_gender.Location = new System.Drawing.Point(325, 334);
-            this.cmb_gender.Name = "cmb_gender";
-            this.cmb_gender.Size = new System.Drawing.Size(200, 32);
-            this.cmb_gender.TabIndex = 26;
+            this.cmb_tc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.cmb_tc.FormattingEnabled = true;
+            this.cmb_tc.Location = new System.Drawing.Point(325, 334);
+            this.cmb_tc.Name = "cmb_tc";
+            this.cmb_tc.Size = new System.Drawing.Size(200, 32);
+            this.cmb_tc.TabIndex = 26;
+            this.cmb_tc.SelectedIndexChanged += new System.EventHandler(this.cmb_tc_SelectedIndexChanged);
             // 
             // lbl_name2
             // 
@@ -256,15 +254,15 @@ namespace KBYSİ
             this.pnl_name2.Size = new System.Drawing.Size(200, 2);
             this.pnl_name2.TabIndex = 32;
             // 
-            // txt_name2
+            // txt_name
             // 
-            this.txt_name2.BackColor = System.Drawing.Color.White;
-            this.txt_name2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_name2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_name2.Location = new System.Drawing.Point(625, 337);
-            this.txt_name2.Name = "txt_name2";
-            this.txt_name2.Size = new System.Drawing.Size(200, 22);
-            this.txt_name2.TabIndex = 31;
+            this.txt_name.BackColor = System.Drawing.Color.White;
+            this.txt_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_name.Location = new System.Drawing.Point(625, 337);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(200, 22);
+            this.txt_name.TabIndex = 31;
             // 
             // label11
             // 
@@ -286,15 +284,15 @@ namespace KBYSİ
             this.panel4.Size = new System.Drawing.Size(200, 2);
             this.panel4.TabIndex = 35;
             // 
-            // textBox1
+            // txt_blood
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(925, 337);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 22);
-            this.textBox1.TabIndex = 34;
+            this.txt_blood.BackColor = System.Drawing.Color.White;
+            this.txt_blood.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_blood.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_blood.Location = new System.Drawing.Point(925, 337);
+            this.txt_blood.Name = "txt_blood";
+            this.txt_blood.Size = new System.Drawing.Size(200, 22);
+            this.txt_blood.TabIndex = 34;
             // 
             // pictureBox1
             // 
@@ -312,11 +310,11 @@ namespace KBYSİ
             this.label12.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.label12.Font = new System.Drawing.Font("Oswald", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(597, 423);
+            this.label12.Location = new System.Drawing.Point(501, 423);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(228, 40);
+            this.label12.Size = new System.Drawing.Size(0, 40);
             this.label12.TabIndex = 38;
-            this.label12.Text = "Mevcut ya da değil";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
@@ -329,6 +327,7 @@ namespace KBYSİ
             this.button1.TabIndex = 39;
             this.button1.Text = "Aktar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // BloodTransfer
             // 
@@ -341,12 +340,12 @@ namespace KBYSİ
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_blood);
             this.Controls.Add(this.lbl_name2);
             this.Controls.Add(this.pnl_name2);
-            this.Controls.Add(this.txt_name2);
+            this.Controls.Add(this.txt_name);
             this.Controls.Add(this.lbl_gender);
-            this.Controls.Add(this.cmb_gender);
+            this.Controls.Add(this.cmb_tc);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -354,6 +353,7 @@ namespace KBYSİ
             this.Name = "BloodTransfer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BloodTransfer";
+            this.Load += new System.EventHandler(this.BloodTransfer_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -380,13 +380,13 @@ namespace KBYSİ
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lbl_gender;
-        private System.Windows.Forms.ComboBox cmb_gender;
+        private System.Windows.Forms.ComboBox cmb_tc;
         private System.Windows.Forms.Label lbl_name2;
         private System.Windows.Forms.Panel pnl_name2;
-        private System.Windows.Forms.TextBox txt_name2;
+        private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_blood;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button1;
